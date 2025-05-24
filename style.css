@@ -8,8 +8,6 @@ html {
     width: 100%;
     justify-content: center;
     align-items: center;
-    color:#e98b34;
-    font-weight: 900;
 }
 
 .projectsbg{
@@ -61,4 +59,46 @@ body {
 
 section {
     scroll-margin-top: 70px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+h1 {
+    color:#e98b34;
+    font-family: "Optima", "Arial"; 
+    font-weight: bold;
+    padding: 2rem 0 2rem 0;
+}
+
+h2 {
+    padding-top: 1.25rem;
+    color: #eddcd2;
+    font-family: "Gill sans", "Arial";
+    font-weight: bold;
+}
+
+p {
+    color:#fff;
+    font-family: "Gill sans", "Arial";
+    font-size: 1.5rem;
+}
+
+.carousel-item {
+    justify-content: center;
+    align-items: center;
+
+}
+
+.carousel-button {
+    background-color:#E68268;
+    color: #fff;
+    box-shadow: 6px 6px 8px 0  #e7c2ba, 4px 4px 6px 0 #CB997E;
+}
+
+.carousel-button:hover {
+    background-color:#CB997E;
+    color:  #e7c2ba;
 }
