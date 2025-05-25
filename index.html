@@ -40,60 +40,67 @@
 
     <!-- home page -->
     <section id="home" class="introbg">
-
         <div class="container">
-            <div class="row">
-                <div class="col">
-                </div>
-                <div class="col">
-                    2 of 2
-                </div>
-                <div class="col">
-                    2 of 2
-                </div>
+            <div class="row" style="height: 15%;">
             </div>
             <div class="row">
                 <div class="col">
                 </div>
-                <div class="col">
-                    <div class="container-fluid">
-                        <h1 class="text-center display-1" style="margin-bottom: 0%; font-family:Optima, Arial; font-weight:bold">Hi I'm Amy!</h1>
-                        <h1 class="text-center" style="color:#e89e58">I'm a software engineer.</h1>
+                 <div class="col-5 left-intro-col">
+                    
+                    <div class="text-end" style="position: relative; display: inline-block;">
+                        <img class="star1" src="assets/star.png" alt="star">
+                        <img class="star2" src="assets/star.png" alt="star">
+                        <img class="squiggle" src="assets/squiggle.png" alt="squiggle">
+                        <img class="me" src="assets/amy.JPG" alt="me">
+                    </div>
+                </div>
+                <div class="col-5" style="justify-content: center; display: flex; flex-direction: column;">
+                    <h1 class="display-1 title">
+                        <img class="splash" src="assets/splash.png" alt="splash"> Hi I'm Amy!
+                    </h1>
+                    <h1 class="soft-eng">I'm a software engineer.</h1>
+                    <div style="padding-top: 10px;">
+                        <a class="btn carousel-button" href="#about" role="button">Discover me!</a>
                     </div>
                 </div>
                 <div class="col">
-                    2 of 2
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                 </div>
                 <div class="col">
-                    2 of 2
                 </div>
-                <div class="col">
-                    2 of 2
+                <div class="col" style="float: left; position: relative;">
+                    <div class ="text-end">
+                        <img class="half-moon" src="assets/half-moon.png" alt="half-moon">  
+                    </div>
                 </div>
             </div>
         </div>
-
-        <img src="assets/flower.png" alt="flower">
-                        <img src="assets/half-moon.png" alt="half-moon">
-                        <img src="assets/splash.png" alt="splash">
-                        <img src="assets/squiggle.png" alt="squiggle">
-                        <img src="assets/star.png" alt="star">
-                        <img src="assets/square.png" alt="square">
     </section>
 
     <!-- about page -->
     <section id="about" class="section-size">
         <div class="container-fluid">
             <div class="row align-items-start vh-100">
-              <div class="col-7 vh-100" style="background-color: #e7c2ba;">
+              <div class="col-7 vh-100 about-col1">
                 <h1>About me</h1>
+                <p>I am currently a second-year student at the University of Ottawa, studying Software Engineering with an option in Engineering Management and Entrepreneurship. 
+
+                    With a passion for programming and technology, I’ve gained hands-on experience through a recent CO-OP placement at Cisco where I automated various router processes using Ansible. In the past, I had an internship where I worked as a Full Stack Developer enhancing website designs and functionality. 
+                    
+                    Through my academic career, I’ve become proficient in Python and Java. Additionally, I was involved in a school project, in which I collaborated with my teammates to create a marketing website (HTML, CSS) and a pitch for our product. 
+                    
+                    I am known for being a hard worker, meticulous, creative, organized, and I am always willing to learn. Along my journey, I aspire to further enrich my programming skills, expand my network, and explore new opportunities in the tech industry.
+
+                    I also enjoy photography, baking and traveling!
+                
+                </p>
               </div>
-              <div class="col-5 vh-100" style="background-color: #e68268;">
-                <img style="filter: drop-shadow(30px 10px 4px #e7c2ba);" src="assets/polaroid.png" alt="polaroid">
+              <div class="col-5 vh-100 about-col2">
+                <img class="rotating-image" src="assets/polaroid.png" alt="polaroid">
               </div>
             </div>
         </div>
@@ -107,75 +114,95 @@
 
     <!-- Projects page -->
     <section id="projects" class="projectsbg">
+        <h1>My projects</h1>
         <div class="container-fluid">
-            <h1>My projects</h1>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <div class="row">
+                <div class="col">
                 </div>
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/services.png" class="d-block w-100" alt="Service project">
-                    <h2 class="text-center">Delivery website</h2>
-                    <p class="text-center">Making deliveries fast and efficient from purchase to your doorstep.</p>
-                    <div class="text-center" style="margin-bottom: 60px;">
-                        <a class="btn carousel-button" href="coming_soon.html" role="button">View Project</a>
+                <div class="col-6">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-images">
+                                    <img src="assets/services.png" class="d-block w-75" alt="Service project">
+                                </div>
+                                <h2 class="text-center">Delivery website</h2>
+                                <p class="text-center">Making deliveries fast and efficient from purchase to your doorstep.</p>
+                                <div class="text-center project-btn">
+                                    <a class="btn carousel-button" href="coming_soon.html" role="button">View Project</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-images">
+                                    <img src="assets/game.png" class="d-block w-75" alt="Game project">
+                                </div>
+                                <h2 class="text-center">Racing game</h2>
+                                <p class="text-center">An interactive and engaging racing game. Customizable with different avatars and car choices.</p>
+                                <div class="text-center project-btn">
+                                    <a class="btn carousel-button" href="coming_soon.html" role="button">View Project</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-images">
+                                    <img src="assets/e-commerce.png" class="d-block w-75" alt="E-commerce project">
+                                </div>
+                                <h2 class="text-center">Handmade products e-commerce site</h2>
+                                <p class="text-center">An e-commerce website for vendors to showcase and sell their products online.</p>
+                                <div class="text-center project-btn">
+                                    <a class="btn carousel-button" href="coming_soon.html" role="button">View Project</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-images">
+                                    <img src="assets/finance.png" class="d-block w-75" alt="Finance project">
+                                </div>
+                                <h2 class="text-center">Personal finance analysis website</h2>
+                                <p class="text-center">A great way to visualise and analyse your personal finances in order to make smart financial decisions.</p>
+                                <div class="text-center project-btn">
+                                    <a class="btn carousel-button" href="coming_soon.html" role="button">View Project</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-images">
+                                    <img src="assets/hbb.png" class="d-block w-75" alt="Hackathon project">
+                                </div>
+                                <h2 class="text-center">Security breach database site</h2>
+                                <p class="text-center">Full-stack Hackathon project run on Gadget. It validates datasets of potential security breaches, complete with an SQL database.</p>
+                                <div class="text-center project-btn">
+                                    <a class="btn carousel-button" href="https://github.com/amykayrala/hackbibis2" role="button">View Project</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-images">
+                                    <img src="assets/skolar.png" class="d-block w-75" alt="School project">
+                                </div>
+                                <h2 class="text-center">Campus delivery website</h2>
+                                <p class="text-center">An on-campus deliveries website run entirely by students, for students, making university life easier and more efficient.</p>
+                                <div class="text-center project-btn">
+                                    <a class="btn carousel-button" href="https://github.com/skolarship/skolarship.github.io" role="button">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="assets/game.png" class="d-block w-100" alt="Game project">
-                    <h2 class="text-center">Racing game</h2>
-                    <p class="text-center">An interactive and engaging racing game. Customizable with different avatars and car choices.</p>
-                    <div class="text-center" style="margin-bottom: 60px;">
-                        <a class="btn carousel-button" href="coming_soon.html" role="button">View Project</a>
-                    </div>
+                <div class="col">
                 </div>
-                <div class="carousel-item">
-                    <img src="assets/e-commerce.png" class="d-block w-100" alt="E-commerce project">
-                    <h2 class="text-center">Handmade products e-commerce site</h2>
-                    <p class="text-center">An e-commerce website for vendors to showcase and sell their products online.</p>
-                    <div class="text-center" style="margin-bottom: 60px;">
-                        <a class="btn carousel-button" href="coming_soon.html" role="button">View Project</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/finance.png" class="d-block w-100" alt="Finance project">
-                    <h2 class="text-center">Personal finance analysis website</h2>
-                    <p class="text-center">A great way to visualise and analyse your personal finances in order to make smart financial decisions.</p>
-                    <div class="text-center" style="margin-bottom: 60px;">
-                        <a class="btn carousel-button" href="coming_soon.html" role="button">View Project</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/hbb.png" class="d-block w-100" alt="Hackathon project">
-                    <h2 class="text-center">Security breach database site</h2>
-                    <p class="text-center">Full-stack Hackathon project run on Gadget. It validates datasets of potential security breaches, complete with an SQL database.</p>
-                    <div class="text-center" style="margin-bottom: 60px;">
-                        <a class="btn carousel-button" href="https://github.com/amykayrala/hackbibis2" role="button">View Project</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/skolar.png" class="d-block w-100" alt="School project">
-                    <h2 class="text-center">Campus delivery website</h2>
-                    <p class="text-center">An on-campus deliveries website run entirely by students, for students, making university life easier and more efficient.</p>
-                    <div class="text-center" style="margin-bottom: 60px;">
-                        <a class="btn carousel-button" href="https://github.com/skolarship/skolarship.github.io" role="button">View Project</a>
-                    </div>
-                </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
     </section>

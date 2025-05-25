@@ -8,6 +8,7 @@ html {
     width: 100%;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .projectsbg{
@@ -86,9 +87,14 @@ p {
     font-size: 1.5rem;
 }
 
-.carousel-item {
+.carousel {
     justify-content: center;
-    align-items: center;
+    display:flex;
+
+}
+
+.carousel-inner {
+    display: flex;
 
 }
 
@@ -101,4 +107,121 @@ p {
 .carousel-button:hover {
     background-color:#CB997E;
     color:  #e7c2ba;
+    transform: translateY(10%);
+    box-shadow: none;
+}
+
+.title {
+    margin-bottom: 0%; 
+    font-family:Optima, Arial; 
+    font-weight:bold; 
+    color:#e98b34; 
+    padding: 0 0 0 0; 
+    position:relative ; 
+    padding: 40px 40px 0 0;
+    display: inline-block
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(-5deg);
+      }
+    50% {
+        transform: rotate(5deg);
+      }
+
+    100% {
+        transform: rotate(-5deg);
+      }
+  }
+
+.rotating-image {
+    animation: 1s spin infinite linear;
+    filter: drop-shadow(30px 30px 4px #e7c2ba); 
+    width: 70%; 
+    height: auto;
+}
+
+.left-intro-col{
+    position: relative; 
+    display: flex; 
+    justify-content: 
+    flex-end; align-items: 
+    center;
+}
+
+.project-btn {
+    margin-bottom: 60px;
+}
+
+.section-container{
+    margin-left: 10%;
+}
+
+.about-col1{
+    background-color: #e7c2ba;
+    padding: 0 40px 0 40px;
+}
+
+.about-col2{
+    background-color: #e68268; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.star1{
+    width:10%; 
+    height:auto; 
+    transform:translate(-90%, -100%)
+}
+
+.star2 {
+    width:10%;
+    height:auto; 
+    transform:translate(-90%, 0%)
+}
+
+.squiggle{
+    width:80%; 
+    height:auto; 
+    transform:translate(-90%, 40%); 
+    z-index: 0;  
+    position: absolute;
+}
+
+.me{
+    width:70%; 
+    height:auto; 
+    border: 5px solid #E2A499; 
+    border-radius: 25px; 
+    position: relative;
+}
+
+.splash{
+    width:10%; 
+    height:auto; 
+    position:absolute; 
+    top:0; 
+    right:0; 
+    transform: translate(-100%, 0%) rotate(120deg);
+}
+
+.soft-eng{
+    font-family: "Gill sans", "Arial"; 
+    color:#e89e58; 
+    font-weight:normal; 
+    padding: 0 0 0 0;
+}
+
+.half-moon{
+    width:70%; 
+    height:auto; 
+    transform: rotate(-90deg) translate(40%, 100%);
+    
+}
+
+.carousel-images{
+    display: flex; justify-content: center;
 }
