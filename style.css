@@ -4,7 +4,6 @@ html {
 
 .introbg{
     background-color: #eddcd2;
-    height: 100vh;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -13,6 +12,7 @@ html {
 
 .projectsbg{
     background-color: #E2A499;
+    padding: 0 40px 0 40px;
 }
 
 body {
@@ -53,13 +53,8 @@ body {
     color: #E68268;
 }
 
-.section-size{
-    height: 100vh;
-    width: 100%;
-}
-
 section {
-    scroll-margin-top: 70px;
+    scroll-margin-top: 40px;
 }
 
 .carousel-control-prev-icon,
@@ -71,11 +66,11 @@ h1 {
     color:#e98b34;
     font-family: "Optima", "Arial"; 
     font-weight: bold;
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0 1rem 0;
 }
 
 h2 {
-    padding-top: 1.25rem;
+    padding-top: 2rem;
     color: #eddcd2;
     font-family: "Gill sans", "Arial";
     font-weight: bold;
@@ -84,7 +79,7 @@ h2 {
 p {
     color:#fff;
     font-family: "Gill sans", "Arial";
-    font-size: 1.5rem;
+    font-size: calc(12px + 0.6vw);
 }
 
 .carousel {
@@ -113,7 +108,7 @@ p {
 
 .title {
     margin-bottom: 0%; 
-    font-family:Optima, Arial; 
+    font-family:"Optima", "Arial"; 
     font-weight:bold; 
     color:#e98b34; 
     padding: 0 0 0 0; 
@@ -141,22 +136,18 @@ p {
     filter: drop-shadow(30px 30px 4px #e7c2ba); 
     width: 70%; 
     height: auto;
+    padding: 40px 0 40px 0;
 }
 
 .left-intro-col{
     position: relative; 
     display: flex; 
-    justify-content: 
-    flex-end; align-items: 
-    center;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .project-btn {
     margin-bottom: 60px;
-}
-
-.section-container{
-    margin-left: 10%;
 }
 
 .about-col1{
@@ -169,6 +160,7 @@ p {
     display: flex; 
     justify-content: center; 
     align-items: center;
+    padding: 0 40px 0 40px;
 }
 
 .star1{
@@ -181,6 +173,18 @@ p {
     width:10%;
     height:auto; 
     transform:translate(-90%, 0%)
+}
+
+.star3{
+    width:10%; 
+    height:auto; 
+    transform:translate(800%, -50%)
+}
+
+.star4 {
+    width:10%;
+    height:auto; 
+    transform:translate(930%, -40%)
 }
 
 .squiggle{
@@ -225,3 +229,39 @@ p {
 .carousel-images{
     display: flex; justify-content: center;
 }
+
+.workbg {
+    background-color: #eddcd2;
+    padding: 0 40px 0 40px;
+}
+
+.workcol2{
+    background-color: #CB997E;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 0 0 50% 50%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 5% 0 5%;
+    width: auto;
+    
+}
+
+.workp{
+    color: #fff;
+    padding-bottom: 25%;
+}
+
+.workpic{
+    width: 90%;
+    height: auto;
+    border-radius: 50% 50% 0 0;
+    border: 5px solid #CB997E;
+    margin: 0 5% 0 5%;
+}
+
+.carousel-col{
+    padding: 0 0 0 0;
+}
+

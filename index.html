@@ -31,7 +31,7 @@
                         <a class="nav-link" href="#work">About my work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects" tabindex="-1" aria-disabled="true">Projects</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                 </ul>
             </div>
@@ -46,7 +46,7 @@
             <div class="row">
                 <div class="col">
                 </div>
-                 <div class="col-5 left-intro-col">
+                 <div class="col-lg-5 left-intro-col">
                     
                     <div class="text-end" style="position: relative; display: inline-block;">
                         <img class="star1" src="assets/star.png" alt="star">
@@ -55,7 +55,7 @@
                         <img class="me" src="assets/amy.JPG" alt="me">
                     </div>
                 </div>
-                <div class="col-5" style="justify-content: center; display: flex; flex-direction: column;">
+                <div class="col-lg-5" style="justify-content: center; display: flex; flex-direction: column;">
                     <h1 class="display-1 title">
                         <img class="splash" src="assets/splash.png" alt="splash"> Hi I'm Amy!
                     </h1>
@@ -63,11 +63,13 @@
                     <div style="padding-top: 10px;">
                         <a class="btn carousel-button" href="#about" role="button">Discover me!</a>
                     </div>
+                    <img class="star3" src="assets/starpink.png" alt="star">
+                    <img class="star4" src="assets/starpink.png" alt="star">
                 </div>
                 <div class="col">
                 </div>
             </div>
-            <div class="row">
+            <div class="row" style="padding-bottom: 40px;">
                 <div class="col">
                 </div>
                 <div class="col">
@@ -82,33 +84,53 @@
     </section>
 
     <!-- about page -->
-    <section id="about" class="section-size">
+    <section id="about">
         <div class="container-fluid">
-            <div class="row align-items-start vh-100">
-              <div class="col-7 vh-100 about-col1">
-                <h1>About me</h1>
-                <p>I am currently a second-year student at the University of Ottawa, studying Software Engineering with an option in Engineering Management and Entrepreneurship. 
-
-                    With a passion for programming and technology, I’ve gained hands-on experience through a recent CO-OP placement at Cisco where I automated various router processes using Ansible. In the past, I had an internship where I worked as a Full Stack Developer enhancing website designs and functionality. 
+            <div class="row">
+                <div class="col-lg-7 about-col1">
+                    <h1>About me</h1>
+                    <p style ="padding: 0 0 2rem 0;"><b>I am currently a second-year student at the University of Ottawa, studying Software Engineering</b> with an option in Engineering Management and Entrepreneurship. </br>
+                        </br>
+                        With a passion for programming and technology, I’ve gained hands-on experience across multiple roles. During my recent CO-OP term at <b>Nokia</b>, I developed and automated tools for user management, testing, and workflow optimization using Python, REST APIs, and Kafka. Previously at <b>Cisco</b>, I automated various router processes using Ansible. I also completed an internship where I worked as a <b>Full Stack Developer</b> enhancing website designs and functionality. </br> 
+                        </br>
+                        Through my academic career, I’ve become proficient in <b>Python</b> and <b>Java</b>.  Additionally, I was involved in a school project, in which I collaborated with my teammates to <b>create a marketing website (HTML, CSS)</b> and a pitch for our product. </br>
+                        </br>
+                        I am known for being a <b>hard worker, meticulous, creative, organized, and I am always willing to learn</b>. Along my journey, I aspire to further enrich my programming skills, expand my network, and explore new opportunities in the tech industry. </br>
+                        </br>
+                        I also enjoy photography, baking and traveling!
                     
-                    Through my academic career, I’ve become proficient in Python and Java. Additionally, I was involved in a school project, in which I collaborated with my teammates to create a marketing website (HTML, CSS) and a pitch for our product. 
-                    
-                    I am known for being a hard worker, meticulous, creative, organized, and I am always willing to learn. Along my journey, I aspire to further enrich my programming skills, expand my network, and explore new opportunities in the tech industry.
-
-                    I also enjoy photography, baking and traveling!
-                
-                </p>
-              </div>
-              <div class="col-5 vh-100 about-col2">
-                <img class="rotating-image" src="assets/polaroid.png" alt="polaroid">
-              </div>
+                    </p>
+                </div>
+                 <div class="col-lg-5 about-col2">
+                    <img class="rotating-image" src="assets/polaroid.png" alt="polaroid">
+                </div>
             </div>
         </div>
 
     </section>
 
     <!-- How I work page -->
-    <section id="work">
+    <section id="work" class="workbg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>How I work</h1>
+                    <div>
+                        <img class="workpic" src="assets/work.JPG" alt="cafe work">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="container workcol2">
+                        <p class="workp">
+                            I approach work with a strong emphasis on collaboration, communication, and creativity. While I’m at the beginning of my UX journey, I bring valuable experience that strengthened my skills in teamwork, problem-solving, and adaptability skills. </br>
+                            </br>
+                            I am currently taking a course in user interface design, where I’m learning the core principles and methods of UX design. This class will help me build a strong foundation in creating user interfaces and the strategies to build effective and accessible designs.  I want to create things not just look good, but feel intuitive and meaningful for users. </br>
+                            </br>
+                            I’m excited to continue growing, learning, and creating :)
+                        </p>
+                    </div>
+                </div>
+            </div>
 
     </section>
 
@@ -116,94 +138,81 @@
     <section id="projects" class="projectsbg">
         <h1>My projects</h1>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                </div>
-                <div class="col-6">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         </div>
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="carousel-images">
-                                    <img src="assets/services.png" class="d-block w-75" alt="Service project">
-                                </div>
-                                <h2 class="text-center">Delivery website</h2>
-                                <p class="text-center">Making deliveries fast and efficient from purchase to your doorstep.</p>
-                                <div class="text-center project-btn">
-                                    <a class="btn carousel-button" href="coming_soon.html" role="button">View Project</a>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="carousel-images">
-                                    <img src="assets/game.png" class="d-block w-75" alt="Game project">
-                                </div>
-                                <h2 class="text-center">Racing game</h2>
-                                <p class="text-center">An interactive and engaging racing game. Customizable with different avatars and car choices.</p>
-                                <div class="text-center project-btn">
-                                    <a class="btn carousel-button" href="coming_soon.html" role="button">View Project</a>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="carousel-images">
-                                    <img src="assets/e-commerce.png" class="d-block w-75" alt="E-commerce project">
-                                </div>
-                                <h2 class="text-center">Handmade products e-commerce site</h2>
-                                <p class="text-center">An e-commerce website for vendors to showcase and sell their products online.</p>
-                                <div class="text-center project-btn">
-                                    <a class="btn carousel-button" href="coming_soon.html" role="button">View Project</a>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="carousel-images">
-                                    <img src="assets/finance.png" class="d-block w-75" alt="Finance project">
-                                </div>
-                                <h2 class="text-center">Personal finance analysis website</h2>
-                                <p class="text-center">A great way to visualise and analyse your personal finances in order to make smart financial decisions.</p>
-                                <div class="text-center project-btn">
-                                    <a class="btn carousel-button" href="coming_soon.html" role="button">View Project</a>
+                          <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 carousel-col">
+                                        <img src="assets/services.png" class="d-block w-100" alt="Service project">
+                                        <h2 class="text-center">Delivery website</h2>
+                                        <p class="text-center">Making deliveries fast and efficient from purchase to your doorstep.</p>
+                                        <div class="text-center project-btn">
+                                            <a class="btn carousel-button" href="coming_soon.html" role="button">View Project</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 carousel-col">
+                                        <img src="assets/game.png" class="d-block w-100" alt="Game project">
+                                        <h2 class="text-center">Racing game</h2>
+                                        <p class="text-center">An interactive and engaging racing game. Customizable with different avatars and car choices.</p>
+                                        <div class="text-center project-btn">
+                                            <a class="btn carousel-button" href="coming_soon.html" role="button">View Project</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 carousel-col">
+                                        <img src="assets/e-commerce.png" class="d-block w-100" alt="E-commerce project">
+                                        <h2 class="text-center">Handmade products e-commerce site</h2>
+                                        <p class="text-center">An e-commerce website for vendors to showcase and sell their products online.</p>
+                                        <div class="text-center project-btn">
+                                            <a class="btn carousel-button" href="coming_soon.html" role="button">View Project</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="carousel-images">
-                                    <img src="assets/hbb.png" class="d-block w-75" alt="Hackathon project">
-                                </div>
-                                <h2 class="text-center">Security breach database site</h2>
-                                <p class="text-center">Full-stack Hackathon project run on Gadget. It validates datasets of potential security breaches, complete with an SQL database.</p>
-                                <div class="text-center project-btn">
-                                    <a class="btn carousel-button" href="https://github.com/amykayrala/hackbibis2" role="button">View Project</a>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 carousel-col">
+                                        <img src="assets/finance.png" class="d-block w-100" alt="Finance project">
+                                        <h2 class="text-center">Personal finance analysis website</h2>
+                                        <p class="text-center">A great way to visualise and analyse your personal finances in order to make smart financial decisions.</p>
+                                        <div class="text-center project-btn">
+                                            <a class="btn carousel-button" href="coming_soon.html" role="button">View Project</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 carousel-col">
+                                        <img src="assets/hbb.png" class="d-block w-100" alt="Hackathon project">
+                                        <h2 class="text-center">Security breach database site</h2>
+                                        <p class="text-center">Full-stack Hackathon project run on Gadget. It validates datasets of potential security breaches, complete with an SQL database.</p>
+                                        <div class="text-center project-btn">
+                                            <a class="btn carousel-button" href="https://github.com/amykayrala/hackbibis2" role="button">View Project</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 carousel-col">
+                                        <img src="assets/skolar.png" class="d-block w-100" alt="School project">
+                                        <h2 class="text-center">Campus delivery website</h2>
+                                        <p class="text-center">An on-campus deliveries website run entirely by students, for students, making university life easier and more efficient.</p>
+                                        <div class="text-center project-btn">
+                                            <a class="btn carousel-button" href="https://github.com/skolarship/skolarship.github.io" role="button">View Project</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="carousel-images">
-                                    <img src="assets/skolar.png" class="d-block w-75" alt="School project">
-                                </div>
-                                <h2 class="text-center">Campus delivery website</h2>
-                                <p class="text-center">An on-campus deliveries website run entirely by students, for students, making university life easier and more efficient.</p>
-                                <div class="text-center project-btn">
-                                    <a class="btn carousel-button" href="https://github.com/skolarship/skolarship.github.io" role="button">View Project</a>
-                                </div>
-                            </div>
-                        </div>
+                          </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
                         </button>
-                    </div>
-                </div>
-                <div class="col">
-                </div>
-            </div>
+                      </div>
         </div>
     </section>
 
